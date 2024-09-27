@@ -86,9 +86,12 @@ ul li a {
 .logo_payk {
     margin-left: 20px;
     border-radius: 20px;
-    
     height: 400px;
     width: 650px;
+    -webkit-box-shadow: 7px 8px 100px 39px rgba(255, 0, 146, 0.49);
+    -moz-box-shadow: 7px 8px 100px 39px rgba(255, 0, 146, 0.49);
+    box-shadow: 7px 8px 100px 39px rgba(255, 0, 146, 0.49);
+
 }
 
 .text1 {
@@ -112,14 +115,11 @@ ul li a {
 }
 
 .gray-background {
+    width: 100%;
     background-color: rgba(19, 18, 18, 0.5);
     padding: 15px;
-    
-}
-
-.gray-background:hover{
-    background: rgb(87, 87, 87);
-
+    position: fixed;
+    backdrop-filter: blur(15px);
 }
 
 .center-content {
@@ -129,6 +129,7 @@ ul li a {
     text-align: left;
     color: aliceblue;
     margin-top: 50px;
+    margin-top: 100px;
 }
 
 .text-container {
@@ -155,13 +156,13 @@ ul li a {
 
 .header{
     width: 100%;
+    
 }
 
 .windows{
     height:24 ;
     width:24 ;
     padding-left: 10px;
-    
 }
 
 .android{
@@ -188,6 +189,7 @@ ul li a {
     padding: 16px;
     font-size: 16px;
     border: none;
+    border-radius: 4px;
   }
 
   .dropdown {
@@ -212,7 +214,54 @@ ul li a {
     display: block;
   }
   
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
   
-  .dropdown:hover .dropbtn {background-color: #858585;}
-  
+  .dropdown:hover .dropbtn {
+    background-color: #858585;
+}
+
+.games{
+display: flex;
+}
+
+  .karti{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 250px;
+    height: 250px;
+    animation: rotation 5s linear infinite;
+    transform-origin: center;
+    position: relative;
+    border-radius: 100%;
+    -webkit-box-shadow: 6px 6px 100px 25px rgba(15, 0, 255, 1);
+    -moz-box-shadow: 6px 6px 100px 25px rgba(15, 0, 255, 1);
+    box-shadow: 6px 6px 100px 25px rgba(15, 0, 255, 1);
+  }
+    @keyframes rotation {
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+    .karti2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 250px;
+        height: 250px;
+        animation: rotation 5s linear infinite;
+        transform-origin: center;
+        position: relative;
+        border-radius: 100%;
+        -webkit-box-shadow: 6px 6px 100px 25px rgba(255, 0, 0, 1);
+        -moz-box-shadow: 6px 6px 100px 25px rgba(255, 0, 0, 1);
+        box-shadow: 6px 6px 100px 25px rgba(255, 0, 0, 1);
+      }
+        @keyframes rotation {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
